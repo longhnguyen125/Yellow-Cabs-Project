@@ -1,10 +1,10 @@
 # Yellow Cabs Project
 ---
 
-Throughout this project, I'll ultilize the P-A-C-E framework to solve this problem
+Throughout this project, I'll ultilize the P-A-C-E framework to solve this problem.
 
 ---
-1. **_PLAN_**
+**_PLAN_**
 
 - **Business Background**: 
 
