@@ -4,7 +4,7 @@
 Throughout this project, I'll ultilize the P-A-C-E framework to solve this problem.
 
 ---
-                                  **_PLAN_**
+**_PLAN_**
 
 - **Business Background**: 
 
