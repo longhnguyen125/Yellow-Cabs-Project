@@ -13,11 +13,11 @@ Yellow Cabs Taxi Co. is a mid-sized urban transportation company serving thousan
 To address these challenges, the CEO hired me as a data analyst to uncover insights, optimize operations, and identify opportunities to improve efficiency, profitability, and customer satisfaction.
 
 - **Here is the list of five questions the business owner would like to know:**
-  1. What drives our ride demand throughout the day, week, and month?
-  2. Are increasing passenger wait times caused by a shortage of available drivers?
-  3. How much do rising fuel prices affect our overall profit?
-  4. What factors influence customer ratings, and how can we improve them?
-  5. Can we predict which rides are likely to result in a customer complaint?
+1. What drives our ride demand throughout the day, week, and month?
+2. Are increasing passenger wait times caused by a shortage of available drivers?
+3. How much do rising fuel prices affect our overall profit?
+4. What factors influence customer ratings, and how can we improve them?
+5. Can we predict which rides are likely to result in a customer complaint?
   
 ---
 2. _**ANALYZE**_
