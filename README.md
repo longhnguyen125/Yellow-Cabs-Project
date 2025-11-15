@@ -5,4 +5,4 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 1. **_PLAN_**
 
 ----
-2._ **ANALYZE**_
+2. _**ANALYZE**_
