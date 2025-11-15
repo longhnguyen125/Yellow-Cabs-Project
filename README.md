@@ -11,7 +11,7 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 3. **CONSTRUCT**: Uncover relationship within data
 4. **EXECUTE**: Collaborates with data team / stakeholers
 ---
-## 1. **_PLAN_**
+## 1. **_PLAN_**: Identify scope of the project
 
 - **Here is the list of five questions the business owner would like to know:**
 1. What drives our ride demand throughout the day, week, and month?
@@ -34,12 +34,12 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 
   
 ---
-2. _**ANALYZE**_
+2. _**ANALYZE**_: Exploratory Data Analysis (EDA)
 
 
 ---
-3. _**CONSTRUCT**_
+3. _**CONSTRUCT**_: Uncover relationship within data
 
 
 ---
-4. _**EXECUTE**_
+4. _**EXECUTE**_: Collaborates with data team / stakeholers
