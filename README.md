@@ -1,4 +1,4 @@
-# Yellow Cabs Project
+#  🚕 Yellow Cabs Project
 ---
 ## Scope of This Project
 Yellow Cabs Taxi Co. is a mid-sized urban transportation company serving thousands of passengers daily. Over the past year, the company has faced declining ride demand, rising operational costs, and increased customer complaints. Fuel prices fluctuate, driver availability is inconsistent, and customer wait times have grown longer. Despite having access to large amounts of trip and operational data, the company has not been using analytics to guide decisions. 
