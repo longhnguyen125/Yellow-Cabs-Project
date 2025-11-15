@@ -19,6 +19,9 @@ To address these challenges, the CEO hired me as a data analyst to uncover insig
 3. How much do rising fuel prices affect our overall profit?
 4. What factors influence customer ratings, and how can we improve them?
 5. Can we predict which rides are likely to result in a customer complaint?
+
+
+- **Project Proposal**
   
 ---
 2. _**ANALYZE**_
