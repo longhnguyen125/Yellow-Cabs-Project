@@ -22,6 +22,16 @@ To address these challenges, the CEO hired me as a data analyst to uncover insig
 
 
 - **Project Proposal**
+<img width="818" height="548" alt="image" src="https://github.com/user-attachments/assets/0567ea7c-fcc0-47e9-a409-e700e72a3cca" />
+<img width="819" height="513" alt="image" src="https://github.com/user-attachments/assets/5aedaed6-0e53-44b7-ba99-d09ece956f85" />
+
+
+
+
+
+
+
+
   
 ---
 2. _**ANALYZE**_
