@@ -12,6 +12,7 @@ Yellow Cabs Taxi Co. is a mid-sized urban transportation company serving thousan
 
 To address these challenges, the CEO hired me as a data analyst to uncover insights, optimize operations, and identify opportunities to improve efficiency, profitability, and customer satisfaction.
 
+
 - **Here is the list of five questions the business owner would like to know:**
 1. What drives our ride demand throughout the day, week, and month?
 2. Are increasing passenger wait times caused by a shortage of available drivers?
