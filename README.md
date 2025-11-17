@@ -22,8 +22,8 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 
 
 - **Project Proposal**
-<img width="550" height="300" alt="image" src="https://github.com/user-attachments/assets/0567ea7c-fcc0-47e9-a409-e700e72a3cca" />
-<img width="550" height="300" alt="image" src="https://github.com/user-attachments/assets/5aedaed6-0e53-44b7-ba99-d09ece956f85" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/0567ea7c-fcc0-47e9-a409-e700e72a3cca" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/5aedaed6-0e53-44b7-ba99-d09ece956f85" />
 
 
 
