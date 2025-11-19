@@ -170,8 +170,8 @@ I prepared a slide deck that:
   - Revenue and demand by borough.
   - Revenue per minute by hour (profitability).
   - Tipping behavior by hour and the hour × distance tip-rate heatmap.
-- Summarizes insights in plain language.
-- Ends with a prioritized list of recommendations.
+- Summarizes insights
+- Recommendations
 
 ### 4.2 Key Recommendations (High Level)
 
