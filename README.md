@@ -1,7 +1,7 @@
  #  🚕 Yellow Cabs Project
 ---
 ## Scope of This Project
-Yellow Cabs Taxi Co. is a mid-sized urban transportation company serving thousands of New Yorkers daily. Over the past year, the company has faced declining ride demand, rising operational costs, and increased customer complaints. Fuel prices fluctuate, driver availability is inconsistent, and customer wait times have grown longer. Despite having access to large amounts of trip and operational data, the company has not been using analytics to guide decisions. 
+Yellow Cabs Taxi Co. is a mid-sized urban transportation company serving thousands of New Yorkers every day. Over the past year, the company has struggled with uneven ride demand, growing operating costs, and rising customer complaints about wait times and service quality. Although the company collects rich trip-level data (timestamps, distances, fares, tips, and locations), it has not been using analytics to guide operational decisions.
 
 To address these challenges, the CEO hired me as a data analyst to uncover insights, optimize operations, and identify opportunities to improve efficiency, profitability, and customer satisfaction.
 
@@ -24,10 +24,6 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 - **Project Proposal**
 <img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/0567ea7c-fcc0-47e9-a409-e700e72a3cca" />
 <img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/5aedaed6-0e53-44b7-ba99-d09ece956f85" />
-
-
-
-
 
 
 
