@@ -16,7 +16,7 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 - **Here is the list of five questions the business owner would like to know:**
 1. What drives our ride demand throughout the day, week, and month?
 2. What factors influence trip duration?
-3. What pickup zones/borough generate the highest revenue and strongest demand?
+3. What pickup zones/borough generate the highest revenue and its average?
 4. At what times of day are trips most profitable?
 5. How does passenger tipping behavior vary by time, distance, and borough?
 
