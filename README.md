@@ -30,12 +30,97 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 
   
 ---
-2. _**ANALYZE**_: Exploratory Data Analysis (EDA)
+## 2. _**ANALYZE**_: Exploratory Data Analysis (EDA)
+
+### 2.1 Data Source
+- NYC Yellow Taxi trip data (sampled from 2017 records).
+- NYC PULocationID 
+- Each record includes pickup & dropoff datetimes, passenger count, trip distance, pickup and dropoff location IDs, fare components, total amount, and tips.
+
+
+### 2.2 Data Cleaning
+
+Key cleaning steps:
+- Converted `tpep_pickup_datetime` and `tpep_dropoff_datetime` from string to proper `datetime` objects.
+- Created separate `pickup_date`, `pickup_time`, `dropoff_date`, and `dropoff_time` columns for easier time-based analysis.
+- Removed trips with:
+  - Non-positive distance or duration.
+  - Trip duration greater than 60 minutes (treated as outliers for this analysis).
+  - Invalid fares, negative totals, or impossible tip percentages.
+- Ensured numerical types for fares, tips, and distances.
+
+### 2.3 Feature Engineering
+
+To support the business questions, I engineered several new features:
+
+- **Time-based features**
+  - `pickup_hour` – hour of day (0–23).
+  - `pickup_dow` – day of week (0 = Monday, 6 = Sunday).
+  - `pickup_month` – calendar month.
+  - `time_of_day` – categorical bucket (Morning, Afternoon, Evening, Night).
+
+- **Trip metrics**
+  - `trip_duration` – time delta between pickup and dropoff.
+  - `trip_duration_minutes` – duration in minutes.
+  - Distance bins (0–5, 6–10, 11–15, 16–20, 21–25, 26+ miles).
+
+- **Revenue & tipping metrics**
+  - `rev_per_min` – total fare per minute (profitability measure).
+  - `tip_rate` – tip amount as a percentage of total fare.
+
+- **Location enrichment**
+  - Joined trip data with the NYC taxi zone lookup to map `PULocationID` to `Zone_x` and `Borough_x`.
+  - Identified top pickup zones and boroughs by volume and revenue.
+
+### 2.4 EDA by Business Question
+
+**Q1 – Ride demand by day, week, and month**
+
+- Created bar charts of trip counts:
+  - By hour of day → revealed clear morning and evening demand peaks.
+  - By day of week → showed relatively even demand with slightly higher volume on certain weekdays.
+  - By month → highlighted softer demand in the summer months compared to the rest of the year.
+- Built a heatmap of `pickup_hour × pickup_dow` to visualize combined patterns and identify true demand “hotspots”.
+
+**Q2 – Factors influencing trip duration**
+
+- Calculated and visualized the distribution of `trip_duration_minutes` (with outliers removed).
+- Binned trip duration into 0–9, 10–19, 20–29, 30–39, 40–49, 50–60 minutes to understand common trip lengths.
+- Explored the relationship between `trip_distance` and `trip_duration_minutes`:
+  - Computed correlation before and after removing extreme outliers.
+  - Plotted a scatter plot to show how longer distances generally lead to longer trips, with variability due to traffic and routing.
+- Compared average duration across:
+  - Different hours of day.
+  - Time-of-day categories (Morning vs Afternoon vs Evening vs Night).
+  - Top pickup zones.
+
+**Q3 – Revenue and demand by borough / zone**
+
+- Aggregated total revenue (`total_amount`) and number of trips by `Borough_x`.
+- Calculated:
+  - **Total revenue by borough** (where the money is).
+  - **Average revenue per trip by borough** (how valuable a typical ride is).
+- Identified top pickup zones by volume and looked at their average trip duration and fare, highlighting zones like Midtown, Penn Station/Madison Sq West, and Times Sq/ Theatre District.
+
+**Q4 – Times of day when trips are most profitable**
+
+- Defined **profitability** as `rev_per_min` (revenue per minute of trip).
+- Grouped by `pickup_hour` to compute average `rev_per_min`.
+- Visualized a bar chart of revenue per minute by hour:
+  - Showed that early-morning hours (around 3–6 AM) can be very profitable on a per-minute basis.
+  - Discussed the tradeoff: these hours have high revenue per trip but low overall demand.
+
+**Q5 – Tipping behavior across time, distance, and borough**
+
+- Calculated `tip_rate` and limited it to 0–100% to remove erroneous records.
+- Analyzed average tip rate:
+  - By `pickup_hour` → Morning and evening trips showed the highest tip rates.
+  - By distance bins → Mid-range trips had slightly higher tip percentages; very long trips often had lower tip rates.
+  - By `Borough_x` → Brooklyn and Manhattan displayed higher tipping behavior than the Bronx.
+- Created an hour × distance **heatmap of tip_rate** to identify combinations of time and distance that yield the most generous tips.
+---
+## 3. _**CONSTRUCT**_: Uncover relationship within data
 
 
 ---
-3. _**CONSTRUCT**_: Uncover relationship within data
-
-
----
-4. _**EXECUTE**_: Collaborates with data team / stakeholers
+## 4. _**EXECUTE**_: Collaborates with data team / stakeholers
