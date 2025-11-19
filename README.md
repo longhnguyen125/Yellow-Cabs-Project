@@ -43,11 +43,7 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 Key cleaning steps:
 - Converted `tpep_pickup_datetime` and `tpep_dropoff_datetime` from string to proper `datetime` objects.
 - Created separate `pickup_date`, `pickup_time`, `dropoff_date`, and `dropoff_time` columns for easier time-based analysis.
-- Removed trips with:
-  - Non-positive distance or duration.
-  - Trip duration greater than 60 minutes (treated as outliers for this analysis).
-  - Invalid fares, negative totals, or impossible tip percentages.
-- Ensured numerical types for fares, tips, and distances.
+- Removed outliers
 
 ### 2.3 Feature Engineering
 
@@ -68,9 +64,8 @@ To support the business questions, I engineered several new features:
   - `rev_per_min` – total fare per minute (profitability measure).
   - `tip_rate` – tip amount as a percentage of total fare.
 
-- **Location enrichment**
-  - Joined trip data with the NYC taxi zone lookup to map `PULocationID` to `Zone_x` and `Borough_x`.
-  - Identified top pickup zones and boroughs by volume and revenue.
+- **Location ID**
+  - Merged trip data with the NYC taxi zone lookup to map `PULocationID` to `Zone_x` and `Borough_x`.
 
 ### 2.4 EDA by Business Question
 
@@ -81,7 +76,7 @@ To support the business questions, I engineered several new features:
   - By day of week → showed relatively even demand with slightly higher volume on certain weekdays.
   - By month → highlighted softer demand in the summer months compared to the rest of the year.
 - Built a heatmap of `pickup_hour × pickup_dow` to visualize combined patterns and identify true demand “hotspots”.
-
+---
 **Q2 – Factors influencing trip duration**
 
 - Calculated and visualized the distribution of `trip_duration_minutes` (with outliers removed).
@@ -93,7 +88,7 @@ To support the business questions, I engineered several new features:
   - Different hours of day.
   - Time-of-day categories (Morning vs Afternoon vs Evening vs Night).
   - Top pickup zones.
-
+---
 **Q3 – Revenue and demand by borough / zone**
 
 - Aggregated total revenue (`total_amount`) and number of trips by `Borough_x`.
@@ -101,7 +96,8 @@ To support the business questions, I engineered several new features:
   - **Total revenue by borough** (where the money is).
   - **Average revenue per trip by borough** (how valuable a typical ride is).
 - Identified top pickup zones by volume and looked at their average trip duration and fare, highlighting zones like Midtown, Penn Station/Madison Sq West, and Times Sq/ Theatre District.
-
+  
+---
 **Q4 – Times of day when trips are most profitable**
 
 - Defined **profitability** as `rev_per_min` (revenue per minute of trip).
@@ -110,6 +106,7 @@ To support the business questions, I engineered several new features:
   - Showed that early-morning hours (around 3–6 AM) can be very profitable on a per-minute basis.
   - Discussed the tradeoff: these hours have high revenue per trip but low overall demand.
 
+---
 **Q5 – Tipping behavior across time, distance, and borough**
 
 - Calculated `tip_rate` and limited it to 0–100% to remove erroneous records.
