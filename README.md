@@ -121,6 +121,74 @@ To support the business questions, I engineered several new features:
 ---
 ## 3. _**CONSTRUCT**_: Uncover relationship within data
 
+In this phase I moved from raw EDA to more structured metrics and visual stories that directly answer the stakeholder questions.
+
+### 3.1 Key Metrics
+
+- **Demand metrics**
+  - `trips_per_hour`, `trips_per_day_of_week`, `trips_per_month`.
+  - Heatmap of trips by `pickup_hour × pickup_dow`.
+
+- **Service & duration metrics**
+  - Average trip duration by:
+    - Hour of day.
+    - Time-of-day category (Morning/Afternoon/Evening/Night).
+    - Top pickup zones.
+
+- **Revenue metrics**
+  - Total and average revenue by borough and by top pickup zone.
+  - `rev_per_min` by hour of day to capture true profitability patterns.
+
+- **Tipping metrics**
+  - Overall average `tip_rate`.
+  - Tip rate by hour, distance bin, and borough.
+  - Hour × distance tipping heatmap.
+
+### 3.2 Patterns & Relationships
+
+From these metrics and visualizations, several important relationships were constructed:
+
+- **Time ↔ Demand:** clear morning and evening peaks in ride volume, plus specific hour × day combinations where demand is strongest.
+- **Distance ↔ Duration:** longer trips take more time but with a lot of spread, likely due to traffic and route choices.
+- **Location ↔ Revenue:** Manhattan-based zones and certain high-traffic hubs generate disproportionate revenue and trips.
+- **Time ↔ Profitability:** early-morning trips provide high revenue per minute despite lower demand.
+- **Time / Distance / Borough ↔ Tipping:** tipping behavior depends jointly on when the trip occurs, how far it goes, and which borough it starts in.
+
+These constructed relationships feed directly into operational recommendations for scheduling drivers and prioritizing high-value areas and times.
+
 
 ---
 ## 4. _**EXECUTE**_: Collaborates with data team / stakeholers
+
+In the final phase, I translated the analytical findings into a concise executive-level story and a set of actionable recommendations for Yellow Cabs leadership.
+
+### 4.1 Executive Summary Presentation
+
+I prepared a slide deck that:
+
+- States the business context and project objective.
+- Introduces the five guiding business questions.
+- Shows key visualizations:
+  - Demand by hour and by hour × day of week.
+  - Trip duration distribution and typical trip length.
+  - Revenue and demand by borough.
+  - Revenue per minute by hour (profitability).
+  - Tipping behavior by hour and the hour × distance tip-rate heatmap.
+- Summarizes insights in plain language.
+- Ends with a prioritized list of recommendations.
+
+### 4.2 Key Recommendations (High Level)
+
+- **Align driver schedules with demand peaks.**  
+  Increase coverage during morning and evening rush hours, and ensure enough drivers in high-demand zones like Midtown and Penn Station.
+
+- **Target profitable but under-served hours.**  
+  Early-morning hours (around 3–6 AM) have high revenue per minute; targeted incentives could make these shifts attractive to drivers.
+
+- **Focus on high-value boroughs and zones.**  
+  Boroughs with strong revenue and tipping behavior (e.g., Manhattan and Brooklyn) should receive proportionally more driver coverage.
+
+- **Monitor and educate around tipping patterns.**  
+  Share insights on when and where tips are strongest so drivers can set realistic expectations and prioritize valuable trips.
+
+These recommendations would be refined in collaboration with operations and driver management teams before implementation.
