@@ -145,13 +145,12 @@ In this phase I moved from raw EDA to more structured metrics and visual stories
 
 From these metrics and visualizations, several important relationships were constructed:
 
-- **Time ↔ Demand:** clear morning and evening peaks in ride volume, plus specific hour × day combinations where demand is strongest.
-- **Distance ↔ Duration:** longer trips take more time but with a lot of spread, likely due to traffic and route choices.
-- **Location ↔ Revenue:** Manhattan-based zones and certain high-traffic hubs generate disproportionate revenue and trips.
-- **Time ↔ Profitability:** early-morning trips provide high revenue per minute despite lower demand.
-- **Time / Distance / Borough ↔ Tipping:** tipping behavior depends jointly on when the trip occurs, how far it goes, and which borough it starts in.
+- **Time & Demand:** clear morning and evening peaks in ride volume, plus specific hour × day combinations where demand is strongest.
+- **Distance & Duration:** longer trips take more time but with a lot of spread, likely due to traffic and route choices.
+- **Location & Revenue:** Manhattan-based zones and certain high-traffic hubs generate disproportionate revenue and trips.
+- **Time & Profitability:** early-morning trips provide high revenue per minute despite lower demand.
+- **Time / Distance / Borough & Tipping:** tipping behavior depends jointly on when the trip occurs, how far it goes, and which borough it starts in.
 
-These constructed relationships feed directly into operational recommendations for scheduling drivers and prioritizing high-value areas and times.
 
 
 ---
@@ -180,7 +179,7 @@ I prepared a slide deck that:
   Increase coverage during morning and evening rush hours, and ensure enough drivers in high-demand zones like Midtown and Penn Station.
 
 - **Target profitable but under-served hours.**  
-  Early-morning hours (around 3–6 AM) have high revenue per minute; targeted incentives could make these shifts attractive to drivers.
+  Early-morning hours (around 3–6 AM) have high revenue per minute; targeted incentives could make these shifts attractive to drivers. Though, its down side was limited ride requested.
 
 - **Focus on high-value boroughs and zones.**  
   Boroughs with strong revenue and tipping behavior (e.g., Manhattan and Brooklyn) should receive proportionally more driver coverage.
@@ -188,4 +187,3 @@ I prepared a slide deck that:
 - **Monitor and educate around tipping patterns.**  
   Share insights on when and where tips are strongest so drivers can set realistic expectations and prioritize valuable trips.
 
-These recommendations would be refined in collaboration with operations and driver management teams before implementation.
