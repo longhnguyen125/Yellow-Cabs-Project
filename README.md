@@ -15,10 +15,10 @@ Throughout this project, I'll ultilize the P-A-C-E framework to solve this probl
 
 - **Here is the list of five questions the business owner would like to know:**
 1. What drives our ride demand throughout the day, week, and month?
-2. Are increasing passenger wait times caused by a shortage of available drivers?
-3. How much do rising fuel prices affect our overall profit?
-4. What factors influence customer ratings, and how can we improve them?
-5. Can we predict which rides are likely to result in a customer complaint?
+2. What factors influence trip duration?
+3. What pickup zones/borough generate the highest revenue and strongest demand?
+4. At what times of day are trips most profitable?
+5. How does passenger tipping behavior vary by time, distance, and borough?
 
 
 - **Project Proposal**
